@@ -1,4 +1,4 @@
-name: End-to-end tests //🧪//nome do teste
+name: End-to-end tests 
 on: [push]//disparado sempre que for dado um push em qualquer branch
 jobs:
   cypress-run://roda o comando e os testes
