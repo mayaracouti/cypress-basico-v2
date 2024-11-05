@@ -1,0 +1,122 @@
+// CAC-TAT.spec.js created with Cypress
+//
+// Start writing your Cypress tests below!
+// If you're unfamiliar with how Cypress works,
+// check out the link below and learn how to write your first test:
+// https://on.cypress.io/writing-first-test
+
+//const cypress = require("cypress");
+
+
+//exercicio 1
+//<reference types="Cypress" />
+describe('Central de atendimento ao cliente TAT', function() {
+    //beforeEach == antes de cada teste
+    beforeEach(() => {
+        // Visita a página inicial
+    });
+
+    it('verifica o titulo da aplicação', function() {   
+        // Verifica o título da página
+        // Espera o título ser igual a 'Central de Atendimento ao Cliente TAT'
+    });
+
+    // Função de callback - exercício extra 1
+    it('preenche os campos obrigatórios e envia o formulário', function() {
+        // Preenche os campos obrigatórios com dados específicos
+        // Envia o formulário
+        // Verifica se a mensagem de sucesso aparece
+    });
+
+    // Função de callback - exercício extra 2
+    // Usar o `only` para testar a função que está sendo realizada
+    it('exibe mensagem de erro por email invalido', function() {
+        // Preenche o email com formato inválido
+        // Clica no botão de envio
+        // Verifica se a mensagem de erro é exibida
+    });
+
+    // Função de callback - exercício extra 3
+    it('exibe mensagem de erro ao submeter o formulário com um email com formatação inválida', function() {
+        // Preenche o telefone com um valor inválido
+        // Verifica que o telefone está vazio
+    });
+
+    it('exibe mensagem de erro quando o telefone se torna obrigatório mas não é preenchido antes do envio do formulário', function() {
+        // Marca o checkbox de telefone
+        // Clica no botão de envio
+        // Verifica se a mensagem de erro é exibida
+    });
+
+    it('envia o formulário com sucesso usando um comando customizado', function() {
+        // Chama um comando customizado para preencher os campos obrigatórios e enviar o formulário
+        // Verifica se a mensagem de sucesso é exibida
+    });
+
+    // Exercício extra 8
+    it('alterar o get para contains', function() {
+        // Usa `cy.contains()` para clicar no botão 'Enviar'
+        // Verifica se a mensagem de erro é exibida
+    });
+
+    // Aula 4 ex extra 1
+    it('seleciona um produto (YouTube) por seu texto', function() {
+        // Seleciona o produto 'YouTube' no dropdown
+        // Verifica se o valor selecionado é 'youtube'
+    });
+
+    it('(mentoria) pelo seu value', function() {
+        // Seleciona o valor 'mentoria' no dropdown
+        // Verifica se o valor selecionado é 'mentoria'
+    });
+
+    it('testando #product', function() {
+        // Seleciona o valor do dropdown pelo índice (1)
+        // Verifica se o valor selecionado é 'blog'
+    });
+
+    // Aula marcando input do tipo radio
+    it('marca o tipo de atendimento feedback', function() {
+        // Marca o radio button com o valor 'feedback'
+        // Verifica se o valor marcado é 'feedback'
+    });
+
+    // Exercício: Marca ambos os checkboxes e depois desmarca o último
+    it('Crie um teste chamado marca ambos checkboxes, depois desmarca o último', function() {
+        // Marca todos os checkboxes
+        // Desmarca o último checkbox
+        // Verifica se o último checkbox está desmarcado
+    });
+
+    // Testando o upload de arquivo
+    it('seleciona um arquivo da pasta fixtures', function() {
+        // Seleciona um arquivo da pasta 'fixtures'
+        // Verifica se o nome do arquivo é 'example.json'
+    });
+
+    // Selecionando arquivo utilizando uma fixture com alias
+    it('seleciona um arquivo utilizando uma fixture para a qual foi dado um alias', function() {
+        // Define o alias para o arquivo 'example.json'
+        // Usa o alias para selecionar o arquivo
+    });
+
+    // Lidando com link que abre na página do navegador
+    // Como testar a página que abre em outro link?
+    // Exemplo de como testar o link da política de privacidade
+    it('acessa a página da política de privacidade removendo o target e então clicando no link', function() {
+        // Remove o atributo 'target' do link
+        // Clica no link
+        // Verifica se a nova página tem o título correto
+    });
+
+    // Exercício extra 2: desafio
+    it.only('testa a página da política de privacidade de forma independente', function() {
+        // Remove o atributo 'target' do link
+        // Clica no link
+        // Verifica se o título da página é 'Central de Atendimento ao Cliente TAT - Política de privacidade'
+    });
+
+});
+
+
+na raiz do projeto crie um diretorio oculto(name.github/)

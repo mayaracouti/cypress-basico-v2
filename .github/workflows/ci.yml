@@ -1,0 +1,12 @@
+name: End-to-end tests 🧪//nome do teste
+on: [push]//disparado sempre que for dado um push em qualquer branch
+jobs:
+  cypress-run://roda o comando e os testes
+    runs-on: ubuntu-20.04//roda numa imagem linux
+    steps:
+      - name: Checkout//roda para o github baixar no workspace o doc
+        uses: actions/checkout@v2
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
